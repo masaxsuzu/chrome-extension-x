@@ -1,0 +1,14 @@
+{
+  "name": "chrome-extension-x",
+  "version": "0.1.0",
+  "scripts": {
+    "fmt": "prettier --write *.js",
+    "lint": "eslint *.js"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/masaxsuzu/chrome-extension-x",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "prettier": "^1.19.1"
+  }
+}

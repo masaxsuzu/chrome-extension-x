@@ -1,0 +1,32 @@
+{
+  "name": "chrome-extension-x",
+  "version": "1",
+  "manifest_version": 2,
+  "description": "My Google Chrome Extension",
+  "browser_action":{
+    "default_icon":{
+      "32": "icons/icon_32.png"
+    },
+    "default_title": "My Google Chrome Extension"
+  },
+  "icons": {
+    "32": "icons/icon_32.png",
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  },
+  "content_scripts": [{
+    "matches": [
+      "http://*/*", 
+      "https://*/*" 
+    ],
+    "js": ["script.js"],
+    "run_at": "document_end"
+  }],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "tabs",
+    "background"
+  ]
+}
